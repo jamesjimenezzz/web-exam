@@ -141,7 +141,7 @@ header img {
 }
 
 .gallery {
-  height: 100vh;
+  height: 150vh;
 }
 
 .gallery-heading {
@@ -151,4 +151,15 @@ header img {
 
 .gallery-heading h1 {
   font-size: 7rem;
+}
+
+.square {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
 }
