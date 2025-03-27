@@ -16,3 +16,17 @@ document.querySelectorAll("section").forEach((section) => {
     }
   );
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#image-slider").mount();
+});
+
+var front = document.getElementById("front");
+
+front.addEventListener("mouseover", function () {
+  front.src = "back2back.png";
+});
+
+front.addEventListener("mouseleave", function () {
+  front.src = "1.png";
+});

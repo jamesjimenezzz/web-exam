@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --white: ;
+  --dark-white: ;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: black;
+
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  color: white;
+  font-family: "Poppins", "sans-serif";
+}
+
+header {
+  font-size: 2rem;
+  justify-content: center;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+  position: sticky;
+  top: 0;
+  max-width: 1440px;
+  z-index: 100;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header ul {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+header ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+header img {
+  height: 52px;
+}
+
+header ul li {
+  height: 1.5em;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  opacity: 80%;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+header ul li:hover {
+  opacity: 100%;
+}
+
+header li span {
+  display: block;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+header li:hover .about-one {
+  transform: translateY(-100%);
+}
+
+header li:hover .about-two {
+  transform: translateY(-100%);
+}
+
+.about-content-james img {
+  height: 30rem;
+  width: auto;
+  border-radius: 3rem;
+}
+
+.about-content-james {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.jimenez {
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.jimenez ul {
+  margin-top: 2rem;
+}
+
+.jimenez ul li {
+  font-size: 1.5rem;
+  list-style-type: circle;
+}
+
+.about-content-james-2 img {
+  height: 30rem;
+  width: auto;
+  border-radius: 3rem;
+}
+
+.about-content-james-2 {
+  margin: 0 auto;
+  max-width: 925px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.about-content-james-3 img {
+  height: 30rem;
+  width: auto;
+  border-radius: 3rem;
+}
+
+.about-content-james-3 {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.meet-us {
+  text-align: center;
+  font-size: 3rem;
+}
