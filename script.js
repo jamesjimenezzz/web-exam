@@ -1,20 +1,7 @@
-gsap.registerPlugin(ScrollTrigger);
+AOS.init();
 
-document.querySelectorAll("section").forEach((section) => {
-  gsap.fromTo(
-    section,
-    { opacity: 0 },
-    {
-      opacity: 1,
-      duration: 2,
-      scrollTrigger: {
-        trigger: section,
-        start: "top bottom",
-        end: "bottom 50%",
-        toggleActions: "play reverse play reverse",
-      },
-    }
-  );
+AOS.init({
+  once: false, // 👈 this allows animations to repeat
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -24,9 +11,40 @@ document.addEventListener("DOMContentLoaded", function () {
 var front = document.getElementById("front");
 
 front.addEventListener("mouseover", function () {
-  front.src = "back2back.png";
+  front.src = "/selfies/back2back.png";
 });
 
 front.addEventListener("mouseleave", function () {
-  front.src = "1.png";
+  front.src = "/selfies/1.png";
+});
+
+const pictures = document.querySelectorAll(".about-content-james img");
+
+pictures.forEach(function (picture) {
+  picture.addEventListener("click", function () {
+    window.location.href = "about.html";
+  });
+});
+
+const about = document.querySelector(".about-heading button");
+
+about.addEventListener("click", function () {
+  window.location.href = "about.html";
+});
+
+function galleryLocator() {
+  window.location.href = "gallery.html";
+}
+
+const gallery = document.querySelector(".gallery-heading button");
+gallery.addEventListener("click", galleryLocator);
+
+const masterpieces = document.querySelectorAll(".splide__slide img");
+masterpieces.forEach(function (masterpiece) {
+  masterpiece.addEventListener("click", galleryLocator);
+});
+
+const contact = document.querySelector("#contax button");
+contact.addEventListener("click", function () {
+  window.location.href = "contact.html";
 });

@@ -230,3 +230,15 @@ button {
   font-family: "Poppins";
   line-height: 4.5rem;
 }
+.hero-content {
+  opacity: 0;
+  transform: translateX(1000px);
+  filter: blur(10px);
+  transition: all 0.8s ease;
+}
+
+.hero-content.aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}

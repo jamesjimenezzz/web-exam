@@ -88,58 +88,93 @@ header li:hover .about-two {
   transform: translateY(-100%);
 }
 
-tr {
-}
-
-tbody {
-  border: 1px solid rgb(48, 48, 48);
-  border-top: none;
-}
-
-table {
-  width: 1440px;
-  margin: 0 auto;
-  max-width: 1440px;
-  border-color: black;
-  border-collapse: separate;
-  border-spacing: 0px;
-  border-top: none;
-  border-left: none;
-}
-
-td {
+.title {
   margin: 0;
-  padding: 15px;
-  border-top: none;
-  border-left: none;
-}
-
-td img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  display: flex;
-  border-radius: 2px;
-  display: block;
-}
-
-.masterpieces {
+  color: white;
+  padding: 0;
   text-align: center;
+  margin-top: 7rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.infos {
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto;
+
+  width: 50%;
+}
+
+input,
+textarea {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 30rem;
+}
+
+#email {
+  width: 100%;
+}
+form {
+  margin: 5rem;
+}
+
+.fire {
+  display: flex;
+  margin-top: 2rem;
+  gap: 5rem;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 1rem 1.8rem;
+  border-radius: 10px;
+}
+
+.function-data {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+input,
+textarea {
+  font-size: 2rem;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-header p {
   font-size: 3rem;
 }
 
-tbody tr:first-child td {
-  border-top: none;
+h1 {
+  font-size: 16.5rem;
+  line-height: 13rem;
 }
 
-tbody tr td:first-child {
-  border-left: none;
-}
-
-tbody tr td:last-child {
-  border-right: none;
-}
-
-tbody tr:last-child td {
-  border-bottom: none;
+section {
+  height: 90vh;
 }
