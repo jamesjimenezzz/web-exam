@@ -15,7 +15,12 @@ html {
 }
 
 body {
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000 47px), repeating-linear-gradient(#1a1a1a, #1a1a1a);
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #000000 47px
+    ),
+    repeating-linear-gradient(#1a1a1a, #1a1a1a);
   background-color: #000000;
 
   max-width: 1400px;
@@ -113,8 +118,7 @@ header li:hover .about-two {
   justify-content: center;
   font-size: 2rem;
   margin: 0 auto;
-
-  width: 50%;
+  box-shadow: 20px 20px 20px rgba(138, 27, 27, 0.25);
 }
 
 input,
@@ -123,6 +127,7 @@ textarea {
   border-right: none;
   border-top: none;
   width: 30rem;
+  font-family: "Poppins";
 }
 
 #email {
@@ -173,10 +178,62 @@ textarea {
 }
 
 h1 {
-  font-size: 16.5rem;
+  font-size: 13.5rem;
   line-height: 13rem;
 }
 
 section {
   height: 90vh;
+}
+
+@media only screen and (max-width: 1430px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  form {
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .fire {
+    flex-direction: column;
+  }
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  form {
+    margin: 3.5rem;
+  }
+
+  h1 {
+    font-size: 11rem;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  form {
+    margin: 2rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .infos {
+    font-size: 1.5rem;
+  }
 }

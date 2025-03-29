@@ -90,7 +90,8 @@ header li:hover .about-two {
   transform: translateY(-100%);
 }
 
-tr {}
+tr {
+}
 
 tbody {
   border: 1px solid rgb(48, 48, 48);
@@ -122,6 +123,7 @@ td img {
   display: flex;
   border-radius: 2px;
   display: block;
+  box-shadow: 10px 10px 10px rgba(167, 167, 167, 0.25);
 }
 
 .masterpieces {
@@ -143,4 +145,14 @@ tbody tr td:last-child {
 
 tbody tr:last-child td {
   border-bottom: none;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Optional: Prevent the table from overflowing the viewport vertically too */
+table {
+  min-width: 1200px; /* or 100% if you prefer */
 }

@@ -24,7 +24,7 @@ body {
   margin-top: 1.5rem;
   color: white;
   font-family: "Poppins", "sans-serif";
-  overflow-x: hidden;
+
   /* Optional: prevents horizontal scroll */
 }
 
@@ -108,6 +108,7 @@ header img {
 
 .fade-description {
   height: 120dvh;
+  margin-bottom: 15rem;
 }
 
 .fade-content {
@@ -163,6 +164,7 @@ button:hover {
   height: 40rem;
   width: auto;
   border-radius: 3rem;
+  box-shadow: 20px 20px 20px rgba(167, 167, 167, 0.25);
 }
 
 .about-content-james {
@@ -245,7 +247,6 @@ header li:hover .about-two {
 
 button {
   font-family: "Poppins";
-  line-height: 4.5rem;
 }
 
 .hero-content {
@@ -259,6 +260,10 @@ button {
   opacity: 1;
   transform: translateX(0);
   filter: blur(0);
+}
+
+.about {
+  margin: 15rem 0rem;
 }
 
 @media only screen and (max-width: 1376px) {
@@ -444,6 +449,10 @@ button {
   .about {
     margin-bottom: 225rem;
   }
+
+  .gallery-heading h1 {
+    font-size: 5rem;
+  }
 }
 
 @media only screen and (max-width: 435px) {
@@ -462,6 +471,10 @@ button {
 
   .fade-content .fade-two {
     font-size: 4.5rem;
+  }
+
+  .gallery-heading h1 {
+    font-size: 4rem;
   }
 }
 
