@@ -307,7 +307,7 @@ button {
   }
 
   .about {
-    margin-bottom: 30rem;
+    margin-bottom: 60rem;
   }
 }
 
@@ -381,7 +381,7 @@ button {
   }
 
   .about {
-    margin-bottom: 60rem;
+    margin-bottom: 100rem;
   }
 }
 
@@ -422,6 +422,9 @@ button {
 }
 
 @media only screen and (max-width: 590px) {
+  .splide__slide img {
+    width: 60%;
+  }
   .hero-content p {
     font-size: 1.8em;
   }
@@ -447,7 +450,7 @@ button {
   }
 
   .about {
-    margin-bottom: 225rem;
+    margin-bottom: 265rem;
   }
 
   .gallery-heading h1 {
@@ -456,6 +459,9 @@ button {
 }
 
 @media only screen and (max-width: 435px) {
+  .splide__slide img {
+    width: 50%;
+  }
   .hero-logo img {
     height: 40rem;
   }
@@ -499,7 +505,7 @@ button {
   }
 
   .about {
-    margin-bottom: 245rem;
+    margin-bottom: 265rem;
   }
 }
 
