@@ -190,15 +190,46 @@ section {
   .container {
     flex-direction: column;
   }
+
+  h1 {
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .container {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 9rem;
+    line-height: 9rem;
+  }
 }
 
 @media only screen and (max-width: 790px) {
+  h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+
+  .infos {
+    font-size: 1.5rem;
+  }
   form {
     margin: 2rem;
+  }
+
+  .contact-header {
+    margin-top: 3rem;
   }
 }
 
 @media only screen and (max-width: 715px) {
+  .infos {
+    font-size: 1rem;
+  }
   .fire {
     flex-direction: column;
   }
@@ -234,6 +265,10 @@ section {
   }
 
   .infos {
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .contact-header {
+    margin-top: 3rem;
   }
 }
