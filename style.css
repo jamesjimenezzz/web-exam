@@ -12,6 +12,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -28,7 +29,6 @@ body {
 }
 
 #grained-bg {
-
   top: 0;
   left: 0;
   height: 100%;
@@ -40,8 +40,6 @@ body {
   pointer-events: none;
   /* So it doesn't block clicks */
 }
-
-
 
 header {
   font-size: 2rem;
@@ -109,7 +107,7 @@ header img {
 }
 
 .fade-description {
-  height: 125vh;
+  height: 120vh;
 }
 
 .fade-content {
@@ -261,4 +259,239 @@ button {
   opacity: 1;
   transform: translateX(0);
   filter: blur(0);
+}
+
+@media only screen and (max-width: 1376px) {
+  .hero-content {
+    margin-top: 10rem;
+    gap: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 2.4em;
+  }
+
+  .fade-content p {
+    font-size: 9.5rem;
+  }
+
+  .fade-content .fade-two {
+    font-size: 9.5rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .hero-content {
+    margin-top: 8rem;
+    gap: 1.5rem;
+  }
+
+  .about-content-james {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    gap: 1rem;
+  }
+
+  .about {
+    height: 130vh;
+  }
+
+  .gallery {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 1125px) {
+  .hero-logo img {
+    width: 580px;
+  }
+
+  .fade-description {
+    height: 130vh;
+  }
+
+  .about {
+    height: 140vh;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .hero-logo img {
+    width: 560px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-logo img {
+    height: 45rem;
+    width: auto;
+  }
+
+  .hero-logo {
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    margin-top: 0em;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .fade-content p {
+    font-size: 9rem;
+  }
+
+  .fade-content .fade-two {
+    font-size: 9rem;
+  }
+}
+
+@media only screen and (max-width: 914px) {
+  .about-content-james {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+  }
+
+  .fade-content p {
+    font-size: 8.5rem;
+  }
+
+  .fade-content .fade-two {
+    font-size: 8.5rem;
+  }
+
+  .about {
+    height: 180vh;
+  }
+}
+
+@media only screen and (max-width: 914px) {
+  .fade-content p {
+    font-size: 8rem;
+  }
+
+  .fade-content .fade-two {
+    font-size: 8rem;
+  }
+
+  .gallery {
+    height: 70vh;
+  }
+
+  .fade-description {
+    height: 115vh;
+  }
+}
+
+@media only screen and (max-width: 794px) {
+  .fade-content p {
+    font-size: 7.5rem;
+  }
+
+  .fade-content .fade-two {
+    font-size: 7.5rem;
+  }
+}
+
+@media only screen and (max-width: 754px) {
+  .hero-content p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2.2em;
+  }
+  .fade-content p {
+    font-size: 7.5rem;
+  }
+
+  .fade-content .fade-two {
+    font-size: 7rem;
+  }
+}
+
+@media only screen and (max-width: 704px) {
+  .fade-content p {
+    font-size: 7.5rem;
+    width: 90%;
+  }
+
+  .fade-content .fade-two {
+    font-size: 7rem;
+  }
+}
+
+@media only screen and (max-width: 586px) {
+  .hero-content p {
+    font-size: 1.8em;
+  }
+
+  .fade-content p {
+    font-size: 6rem;
+    width: 90%;
+  }
+
+  .fade-content .fade-two {
+    font-size: 5.5rem;
+  }
+
+  .about-content-james {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center; /* Add this! */
+  }
+
+  .about {
+    height: 330vh;
+  }
+
+  .fade-description {
+    height: 90vh;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .hero-logo img {
+    height: 40rem;
+  }
+
+  .hero-content h1 {
+    font-size: 6rem;
+  }
+
+  .fade-content p {
+    font-size: 5rem;
+    width: 90%;
+  }
+
+  .fade-content .fade-two {
+    font-size: 4.5rem;
+  }
+
+  .fade-description {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .fade-content p {
+    font-size: 4rem;
+    width: 90%;
+  }
+
+  .fade-content .fade-two {
+    font-size: 3.5rem;
+  }
+
+  .fade-description {
+    height: 70vh;
+  }
+
+  .hero-content p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.6em;
+  }
 }
