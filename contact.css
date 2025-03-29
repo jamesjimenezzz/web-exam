@@ -15,7 +15,8 @@ html {
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000 47px), repeating-linear-gradient(#1a1a1a, #1a1a1a);
+  background-color: #000000;
 
   max-width: 1400px;
   margin: 0 auto;
@@ -127,6 +128,7 @@ textarea {
 #email {
   width: 100%;
 }
+
 form {
   margin: 5rem;
 }

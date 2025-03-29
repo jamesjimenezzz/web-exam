@@ -15,7 +15,9 @@ html {
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-image: radial-gradient(#1a1a1a 3px, transparent 3px);
+  background-size: 54px 54px;
+  background-color: #000000;
 
   max-width: 1400px;
   margin: 0 auto;
@@ -88,8 +90,7 @@ header li:hover .about-two {
   transform: translateY(-100%);
 }
 
-tr {
-}
+tr {}
 
 tbody {
   border: 1px solid rgb(48, 48, 48);
