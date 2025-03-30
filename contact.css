@@ -224,6 +224,11 @@ section {
   .contact-header {
     margin-top: 3rem;
   }
+
+  input,
+  textarea {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 715px) {
@@ -270,5 +275,10 @@ section {
 
   .contact-header {
     margin-top: 3rem;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem;
   }
 }
