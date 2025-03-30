@@ -28,19 +28,6 @@ body {
   /* Optional: prevents horizontal scroll */
 }
 
-#grained-bg {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -9999;
-  /* Push it far behind */
-  background-color: black;
-  /* Same as body */
-  pointer-events: none;
-  /* So it doesn't block clicks */
-}
-
 header {
   font-size: 2rem;
   justify-content: center;
@@ -86,6 +73,10 @@ header img {
   font-size: 2.6rem;
   color: rgb(199, 198, 198);
   font-family: "Poppins", sans-serif;
+}
+
+.bold {
+  color: white;
 }
 
 .hero-container {
@@ -176,7 +167,8 @@ button:hover {
 }
 
 .gallery {
-  height: 100dvh;
+  min-height: 100vh;
+  padding: 22rem 0;
 }
 
 .gallery-heading {

@@ -118,7 +118,7 @@ header li:hover .about-two {
   justify-content: center;
   font-size: 2rem;
   margin: 0 auto;
-  box-shadow: 20px 20px 20px rgba(138, 27, 27, 0.25);
+  box-shadow: 20px 20px 20px rgb(0, 0, 0);
 }
 
 input,
